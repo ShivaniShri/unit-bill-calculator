@@ -21,6 +21,15 @@
                 <input type="submit" name="submit" value="Calculate" required>
             </form>
         </div>
+
+        <div class="d5">
+            <h2>Receipt - Electricity Bill</h2>
+            <p>---------------------------------------------------------------------------------------</p>
+
+            <p>---------------------------------------------------------------------------------------</p>
+            <a href="index.php"><button>Reset</button></a>
+            <button id="print">Print</button>
+        </div>
     </div>
 
 </div>
