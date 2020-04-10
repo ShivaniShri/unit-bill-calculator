@@ -5,6 +5,18 @@ This is a website where a user can input the unit consumed and the system will g
 <img src="ElectricUnitCal/screenshot/img1.png">
 
 # Home Page - Section 2 - Receipt Section
+<img src="ElectricUnitCal/screenshot/img2.png">
+
+<img src="ElectricUnitCal/screenshot/img3.png">
+<img src="ElectricUnitCal/screenshot/img4.png">
+<img src="ElectricUnitCal/screenshot/img5.png">
+<img src="ElectricUnitCal/screenshot/img6.png">
+<img src="ElectricUnitCal/screenshot/img7.png">
+<img src="ElectricUnitCal/screenshot/img8.png">
+<img src="ElectricUnitCal/screenshot/img9.png">
+<img src="ElectricUnitCal/screenshot/img10.png">
+
+
 ### Benefits of this website
 1. Generation of Receipt according to electricity unit consumed.
 2. Once Generated the bill, user can print it with the print option avilable.
