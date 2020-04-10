@@ -2,7 +2,7 @@
 This is a website where a user can input the unit consumed and the system will generate the receipt for it, which he can print on the spot.
 
 # Home Page - Section 1 - User's Input for Unit Consumed
-<img src="unit-bill-calculator/ElectricUnitCal/screenshot/img1.png">
+<img src="ElectricUnitCal/screenshot/img1.png">
 
 # Home Page - Section 2 - Receipt Section
 ### Benefits of this website
