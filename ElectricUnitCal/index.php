@@ -25,7 +25,45 @@
         <div class="d5">
             <h2>Receipt - Electricity Bill</h2>
             <p>---------------------------------------------------------------------------------------</p>
+            <?php
+            if(isset($_POST['submit'])){
 
+                $unit = $_POST['unit'];
+                $sum = 0;
+
+                if(!empty($unit)){
+
+                    if($unit<=50){
+                        $sum = $unit * 9;
+                        echo '<p>₹ 9 for ',$unit,' unit consumed = ₹ ',$sum,'</p>';
+
+                        echo '<p>---------------------------------------------------------------------------------------</p>';
+                        echo '<pre>Total Unit = ',$unit,'                  Total Bill = ₹ ',$sum,'</pre>';
+                    }
+                    elseif($unit>50 && $unit<=100){
+                        $sum = 50 * 9;
+                        echo '<p>₹ 9 for 50 unit consumed = ₹ ',$sum,'</p>';
+                        $sum1 = ($unit - 50) * 12;
+                        echo '<p>₹ 12 for next ',($unit - 50),' unit consumed = ₹ ',$sum1,'</p>';
+
+                        echo '<p>---------------------------------------------------------------------------------------</p>';
+                        echo '<pre>Total Unit = ',$unit,'                  Total Bill = ₹ ',$sum + $sum1,'</pre>';
+                    }
+                    else{
+                        $sum = 50 * 9;
+                        echo '<p>₹ 9 for 50 unit consumed = ₹ ',$sum,'</p>';
+                        $sum1 = 50 * 12;
+                        echo '<p>₹ 12 for next 50 unit consumed = ₹ ',$sum1,'</p>';
+                        $sum2 = ($unit - 100) * 15;
+                        echo '<p>₹ 15 for next ',($unit - 100),' unit consumed = ₹ ',$sum2,'</p>';
+
+                        echo '<p>---------------------------------------------------------------------------------------</p>';
+
+                        echo '<pre>Total Unit = ',$unit,'                  Total Bill = ₹ ',$sum + $sum1 + $sum2,'</pre>';
+                    }
+                }
+            }
+            ?>
             <p>---------------------------------------------------------------------------------------</p>
             <a href="index.php"><button>Reset</button></a>
             <button id="print">Print</button>
